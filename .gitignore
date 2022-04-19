@@ -1,5 +1,9 @@
 # Object file
 *.o
-
+*.cbp
+/bin
+/obb
+*.exe
+*.layout
 # Ada Library Information
 *.ali
