@@ -14,17 +14,28 @@ int main()
     {
         cout << "Ты учишься?" << endl
              << "(y/Y - Да, n/N - Нет)" << endl;
+        while(1)
+        {
             char ask = 0;
             cout << "И твой ответ: ";
             cin >> ask;
             if((ask == 'Y') || (ask == 'y'))
             {
                 cout << "Ты крут!" << endl;
+                break;
             }
             if((ask == 'N') || (ask == 'n'))
             {
                 cout << "Почему же?" << endl;
+                break;
             }
+            else
+            {
+                ask = 0;
+                cout << "Ошибка! Попробуй ещё раз..." << endl
+                     << "Варианты выбора для кого написаны?" << endl;
+            }
+
+        }
     }
-    return 0;
 }
