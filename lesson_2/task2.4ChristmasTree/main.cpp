@@ -11,6 +11,10 @@ int main()
     {
         for(int cnt = 0; cnt < supp; cnt++)
         {
+            cout << " ";
+        }
+        for(int cnt = 0; cnt < sz-supp+1; cnt++)
+        {
             cout << "*";
         }
         supp--;
