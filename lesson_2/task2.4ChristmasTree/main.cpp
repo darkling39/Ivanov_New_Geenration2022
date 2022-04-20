@@ -13,7 +13,11 @@ int main()
         {
             cout << " ";
         }
-        for(int cnt = 0; cnt < sz-supp+1; cnt++)
+        for(int cnt = 0; cnt < sz - supp + 1; cnt++)
+        {
+            cout << "*";
+        }
+        for(int cnt = 0; cnt < sz - supp; cnt++)
         {
             cout << "*";
         }
