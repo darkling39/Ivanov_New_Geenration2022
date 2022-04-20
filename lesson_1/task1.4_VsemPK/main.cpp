@@ -13,6 +13,6 @@ int main()
     cin >> CPU;
     cout << "Dicount: ";
     cin >> discount;
-    cout << "Your PC will cost - " <<  (mother+videocard+CPU) - (((mother+videocard+CPU) *discount)/100) << "$";
+    cout << "Your PC will cost - " <<  (mother+videocard+CPU) - (((mother+videocard+CPU) *discount)/100) << "$" << endl;
     return 0;
 }
