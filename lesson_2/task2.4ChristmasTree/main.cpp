@@ -24,6 +24,11 @@ int main()
         supp--;
         cout << endl;
     }
+    for(int i = 0; i < sz; i++)
+    {
+        cout << " ";
+    }
+    cout << "*";
 
     return 0;
 }
