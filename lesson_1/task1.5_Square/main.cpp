@@ -22,6 +22,6 @@ int main()
         cout << "x = " << x1 << endl;
     }
     if(D < 0)
-        cout << "Null" << endl;
+        cout << "Null";
     return 0;
 }
