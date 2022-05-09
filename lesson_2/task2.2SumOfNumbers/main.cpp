@@ -9,7 +9,12 @@ int main()
     sup = num;
     while(sup != 0)
     {
-        sum += sup%10;
+        int def = 0;
+        def += sup%10;
+        if(def%2 == 0)
+        {
+            sum += def;
+        }
         sup = sup/10;
     }
     cout << sum << endl;
