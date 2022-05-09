@@ -4,36 +4,34 @@ using namespace std;
 
 int main()
 {
-    system("chcp 1251 & cls");
-    cout << "Привет, дружище, сколько тебе лет?" << endl;
+    cout << "Hello, mate, how old are you?" << endl;
     short age = 0;
     cin >> age;
     if (age < 10)
-        cout << "Вау, ты уже такой большой!" << endl;
+        cout << "Wow, you are so adult!" << endl;
     else
     {
-        cout << "Ты учишься?" << endl
-             << "(y/Y - Да, n/N - Нет)" << endl;
+        cout << "Are you studying?" << endl
+             << "(y/Y - Yes, n/N - No)" << endl;
         while(1)
         {
             char ask = 0;
-            cout << "И твой ответ: ";
+            cout << "Your answer: ";
             cin >> ask;
             if((ask == 'Y') || (ask == 'y'))
             {
-                cout << "Ты крут!" << endl;
+                cout << "You are cool!" << endl;
                 break;
             }
             if((ask == 'N') || (ask == 'n'))
             {
-                cout << "Почему же?" << endl;
+                cout << "Why?" << endl;
                 break;
             }
             else
             {
                 ask = 0;
-                cout << "Ошибка! Попробуй ещё раз..." << endl
-                     << "Варианты выбора для кого написаны?";
+                cout << "Error! Try one more time..." << endl;
             }
 
         }
