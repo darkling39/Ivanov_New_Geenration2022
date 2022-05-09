@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    int sz = 20, supp = 0;
+    int sz = 20, supp = 0, mx = 0;
     int pointer[sz];
     cout << "Fill the array" << endl
          << "(0 - end)"      << endl;
@@ -16,12 +16,27 @@ int main()
             supp = i;
             break;
         }
+        supp = i;
     }
     for(int i = 0; i < supp; i++)
     {
-        for(int tmp = 0; tmp < pointer[i]; tmp++)
+        if(pointer[i] > mx)
+            mx = pointer[i];
+    }
+
+
+    for(int i = 0; i < mx; i++)
+    {
+        for(int t = 0; t < supp; t++)
         {
-            cout << "*";
+            if(i < pointer[t])
+            {
+                cout << "*";
+            }
+            else
+            {
+                cout << " ";
+            }
         }
         cout << endl;
     }
