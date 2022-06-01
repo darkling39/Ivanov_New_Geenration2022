@@ -5,9 +5,9 @@ using namespace std;
 
 int main()
 {
-    string yessir;
-    getline(cin, yessir);
-    for(int i = 0; i < yessir.length(); i++)
+    char yessir[256];
+    cin.getline(yessir, 256);
+    for(int i = 0; i < 256; i++)
     {
         if(yessir[i] == 'a' ||
            yessir[i] == 'o' ||
@@ -16,10 +16,12 @@ int main()
            yessir[i] == 'e' ||
            yessir[i] == 'y')
         {
-            if(i%2 == 0)
+            if((i)%2 == 0)
             {
                 cout << i << ": " << yessir[i] << endl;
             }
         }
+        if(yessir[i] == 0)
+            break;
     }
 }
