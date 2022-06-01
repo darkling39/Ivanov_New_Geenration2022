@@ -11,29 +11,14 @@ int main()
         cout << "Wow, you are so adult!" << endl;
     else
     {
-        cout << "Are you studying?" << endl
-             << "(y/Y - Yes, n/N - No)" << endl;
-        while(1)
-        {
-            char ask = 0;
-            cout << "Your answer: ";
-            cin >> ask;
-            if((ask == 'Y') || (ask == 'y'))
-            {
-                cout << "You are cool!" << endl;
-                break;
-            }
-            if((ask == 'N') || (ask == 'n'))
-            {
-                cout << "Why?" << endl;
-                break;
-            }
-            else
-            {
-                ask = 0;
-                cout << "Error! Try one more time..." << endl;
-            }
-
-        }
+        cout << "Do you study?" << endl
+             << "(1 - Yes, 0 - No)" << endl;
+        short ask;
+        cin >> ask;
+        if(ask == 1)
+            cout << "You are awesome!" << endl;
+        else
+            cout << "Why?" << endl;
     }
+
 }

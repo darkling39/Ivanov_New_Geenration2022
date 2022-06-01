@@ -12,12 +12,9 @@ int main()
         for(int cnt = 0; cnt < supp; cnt++)
         {
             cout << " ";
+
         }
-        for(int cnt = 0; cnt < sz - supp + 1; cnt++)
-        {
-            cout << "*";
-        }
-        for(int cnt = 0; cnt < sz - supp; cnt++)
+        for(int cnt = 0; cnt < i*2+1; cnt++)
         {
             cout << "*";
         }
