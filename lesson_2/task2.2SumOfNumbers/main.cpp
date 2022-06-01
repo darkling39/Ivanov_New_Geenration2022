@@ -6,16 +6,15 @@ int main()
 {
     int num, sum = 0, sup;
     cin >> num;
-    sup = num;
-    while(sup != 0)
+    while(num != 0)
     {
         int def = 0;
-        def += sup%10;
+        def += num%10;
         if(def%2 == 0)
         {
             sum += def;
         }
-        sup = sup/10;
+        num = num/10;
     }
     cout << sum << endl;
     return 0;
