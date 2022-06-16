@@ -14,25 +14,22 @@ int main()
     cin.getline(sec, 256);
     for(int i = 0; i < 256; i++)
     {
-        if(fir[i] != 0)
-            cnt1++;
-        else
+        if(fir[i] == 0)
+        {
+            cout << "First" << " < " << "Second" << endl;
             break;
+        }
+        if(sec[i] == 0)
+        {
+            cout << "First" << " > " << "Second" << endl;
+            break;
+        }
+        if(fir[i+1] == 0 && sec[i+1] == 0)
+        {
+            cout << "First" << " = " << "Second" << endl;
+            break;
+        }
 
     }
-    for(int i = 0; i < 256; i++)
-    {
-        if(sec[i] != 0)
-            cnt2++;
-        else
-            break;
-
-    }
-    if(cnt1 < cnt2)
-        cout << "First" << " < " << "Second" << endl;
-    else if(cnt1 > cnt2)
-        cout << "First" << " > " << "Second" << endl;
-    else
-        cout << "First" << " = " << "Second" << endl;
     return 0;
 }
