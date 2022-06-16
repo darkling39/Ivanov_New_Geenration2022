@@ -6,6 +6,7 @@ using namespace std;
 int main()
 {
     char yessir[256];
+    cout << "Enter something and i will show you vowels on even posisions: " << endl;
     cin.getline(yessir, 256);
     for(int i = 0; i < 256; i++)
     {
