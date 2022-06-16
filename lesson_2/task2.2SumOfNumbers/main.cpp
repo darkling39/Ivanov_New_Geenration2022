@@ -4,17 +4,19 @@ using namespace std;
 
 int main()
 {
-    int num, sum = 0, sup;
+    int num, sum = 0, supp;
+    cout << "Enter the number: ";
     cin >> num;
-    while(num != 0)
+    supp = num;
+    while(supp != 0)
     {
         int def = 0;
-        def += num%10;
+        def += supp%10;
         if(def%2 == 0)
         {
             sum += def;
         }
-        num = num/10;
+        supp = supp/10;
     }
     cout << sum << endl;
     return 0;
